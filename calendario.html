@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tooltip.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#img-opaca").fadeIn(1500);
+       });
+        
+    </script>
+    <script src="js/calendario.js"></script> 
+
+    
+    <title>Calendario</title>
+</head>
+<body onload="AtualizarCalendario(0)">
+    
+    <header class="container-fluid">       
+        <nav class="logo-contato">
+            <div class="logo1">
+                <a class="logo2" href="index.html"><img src="img/LOGO.png" width="70" height="50" class="d-inline-block align-middle" alt=""></a> 
+                <a class="logo" href="index.html">
+                    Gyten 
+                </a>
+                <a href="https://www.facebook.com/carlos.beraldo.77"><img src="img/icon-facebook.png" width="30" height="30" class="d-inline-block align-top rede"></a>
+                <a href="https://www.instagram.com/chberaldo/"><img src="img/icon-instagram.png" width="30" height="30" class="d-inline-block align-top rede"></a>
+                <a href="https://www.youtube.com/channel/UCccVGXb5ULssDVBGCycwfPg?view_as=subscriber"><img src="img/icon-youtube.png" width="30" height="30" class="d-inline-block align-top rede"></a>
+               
+            </div>
+                    
+
+        </nav>
+
+
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+       <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">           
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                   <a href="index.html"  class="nav-link">Inicio</a>
+               </li>
+                <li class="nav-item">
+                    <a href="calendario.html" class="nav-link">Calendário</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cadastro.html" class="nav-link">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="album.html" class="nav-link">Album</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Campeões</a>
+
+                    <div class=" dropdown-menu">
+                        <a href="postzoe.html" class="dropdown-item">Zoe</a>               
+                        <a href="postsyndra.html" class="dropdown-item">Syndra</a>                       
+                        <a href="postcorki.html" class="dropdown-item">Corki</a>
+                             
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="Contato.html" class="nav-link">Contato</a>
+                </li>
+           </ul>
+           </div>
+        </nav>
+   </header>
+   <div id="fundo">
+        <img id="img-opaca" src="img/zoe2.jpg" class="img-fluid">
+
+    </div>
+
+<div class="container table-responsive">
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td><button class="btn btn-primary" onclick="AtualizarCalendario(-1)"><-</button></td>
+            <td id="mes" colspan="5">Mes e Ano</td>
+            <td><button class="btn btn-primary" onclick="AtualizarCalendario(1)">-></button></td>
+        </tr>
+        <tr>
+            <th>Domingo</th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th>Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+        </tr>
+        <tr>
+            <td id="dia_0_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_0_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+        <tr>
+            <td id="dia_1_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_1_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+        <tr>
+            <td id="dia_2_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_2_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+        <tr>
+            <td id="dia_3_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_3_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+        <tr>
+            <td id="dia_4_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_4_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+        <tr>
+            <td id="dia_5_0" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_1" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_2" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_3" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_4" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_5" onclick="SelecionarDia(this)"></td>
+            <td id="dia_5_6" onclick="SelecionarDia(this)"></td>
+        </tr>
+    </table>
+    <button class="btn btn-primary" onclick="MostrarSelecionados()">Mostrar Selecionados</button>
+    
+</div>
+<div class="container"><div id="diasMarcados"></div></div>
+
+
+</body>
+</html>
